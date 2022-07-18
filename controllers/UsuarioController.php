@@ -101,7 +101,6 @@ class UsuarioController
         if ($result == false) {
             unset($_SESSION["usuario"]);
             header("Location: ../views/usuario/editar.php?clave=" . $id . "&msg=Usuario editado con exito");
-
             exit;
         } else {
             unset($_SESSION["usuario"]);
